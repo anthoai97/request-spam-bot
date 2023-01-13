@@ -44,7 +44,7 @@ def callback():
             session = requests.Session()
             session.proxies = dict({'http': proxy})
             m_headers = {'User-Agent': generator_user_agent()}
-            r = session.get('https://platform-qa.dayaway.sg', headers= m_headers)
+            r = session.get('https://platform-qa.domain.sg', headers= m_headers)
             print(r)
             
     except KeyboardInterrupt:
